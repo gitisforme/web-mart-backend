@@ -62,7 +62,7 @@ export const signUp = () =>
       lastName,
       email,
       password: hashedPassword,
-      userType: [userType],
+      userType: [...userType],
       token: emailToken,
     });
 

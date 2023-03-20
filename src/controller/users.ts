@@ -43,6 +43,7 @@ export const changePassword = () =>
     );
 
     if (!result) {
+      res.status(201).json({message: "Password incorrect!"});
       throw new BadRequestError("Pasword is incorrect", "PASSWORD_INCORRECT");
     }
 
